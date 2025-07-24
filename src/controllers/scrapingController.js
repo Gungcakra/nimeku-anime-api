@@ -6,7 +6,7 @@ import { extractIframeSrc } from "../utils/helper.js";
 export const getNew = async (req, res) => {
   const { pageNumber } = req.params;
   try {
-    const url = `https://samehadaku.mba/anime-terbaru/page/${pageNumber}`;
+    const url = `https://samehadaku.now/anime-terbaru/page/${pageNumber}`;
     const html = await fetchPage(url);
     const $ = load(html);
 
